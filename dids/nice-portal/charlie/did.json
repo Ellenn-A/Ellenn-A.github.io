@@ -1,0 +1,38 @@
+{
+  "@context": [
+    "https://www.w3.org/ns/did/v1",
+    "https://w3id.org/security/suites/jws-2020/v1"
+  ],
+  "id": "did:web:Ellenn-A.github.io:dids:nice-portal:charlie",
+  "verificationMethod": [
+    {
+      "id": "did:web:Ellenn-A.github.io:dids:nice-portal:charlie#owner",
+      "type": "JsonWebKey2020",
+      "controller": "did:web:Ellenn-A.github.io:dids:nice-portal:charlie",
+      "publicKeyJwk": {
+        "kty": "OKP",
+        "crv": "Ed25519",
+        "x": "m-YCIJrPjkuue6IceTcyNP1bdD0o6OT2ePlqSABjU4o"
+      }
+    }
+  ],
+  "authentication": [
+    "did:web:Ellenn-A.github.io:dids:nice-portal:charlie#owner"
+  ],
+  "assertionMethod": [
+    "did:web:Ellenn-A.github.io:dids:nice-portal:charlie#owner"
+  ],
+  "service": [
+    {
+      "id": "did:web:Ellenn-A.github.io:dids:nice-portal:charlie#did-communication",
+      "type": "did-communication",
+      "priority": 0,
+      "recipientKeys": [
+        "did:web:Ellenn-A.github.io:dids:nice-portal:charlie#owner"
+      ],
+      "routingKeys": [],
+      "accept": ["didcomm/aip1"],
+      "serviceEndpoint": "http://nice-agent-issuer-veritable:5002"
+    }
+  ]
+}
