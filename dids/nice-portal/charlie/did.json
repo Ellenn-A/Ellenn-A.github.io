@@ -12,7 +12,7 @@
       "publicKeyJwk": {
         "kty": "OKP",
         "crv": "Ed25519",
-        "x": "m-YCIJrPjkuue6IceTcyNP1bdD0o6OT2ePlqSABjU4o"
+        "x": "bdpPNo7MUODpFFiS-aY_lXmAYsfG7VW3ZA4gZO1ZICg"
       }
     }
   ],
